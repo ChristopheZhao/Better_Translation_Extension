@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "Better Translator",
+    "version": "1.0",
+    "description": "A better translator for web pages",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "contextMenus",
+      "tabs"
+    ],
+    "host_permissions": [
+      "http://127.0.0.1:8000/*"
+    ],
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background/background.js"
+    },
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["utils/api.js", "utils/storage.js", "content/ui.js", "content/translator.js", "content/content.js"],
+      "css": ["content/styles.css"],
+      "type": "module"
+    }],
+    "icons": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  }
