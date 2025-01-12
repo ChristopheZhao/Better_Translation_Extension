@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Better Translator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Better Translator</h1>
+      <div class="status-indicator" id="serverStatus">
+        <span class="status-dot"></span>
+        <span class="status-text">检查服务状态...</span>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="settings">
+        <div class="setting-item">
+          <label class="switch">
+            <input type="checkbox" id="autoTranslate">
+            <span class="slider"></span>
+          </label>
+          <span class="setting-text">自动翻译Medium文章</span>
+        </div>
+
+        <div class="setting-item">
+          <label class="switch">
+            <input type="checkbox" id="showOriginal">
+            <span class="slider"></span>
+          </label>
+          <span class="setting-text">悬停显示原文</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="translatePage" class="btn primary">翻译当前页面</button>
+        <button id="resetPage" class="btn secondary">恢复原文</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span id="version">v1.0.0</span>
+      <a href="#" id="openOptions">设置</a>
+    </div>
+  </div>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>
