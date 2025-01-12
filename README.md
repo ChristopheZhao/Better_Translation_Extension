@@ -17,17 +17,18 @@ Better Translator 的 Chrome 扩展前端，提供便捷的网页翻译功能。
 ### 开发模式安装
 
 1. 克隆仓库：
-\```bash
+```bash
 git clone https://github.com/ChristopheZhao/better-translator.git
-cd better-translator/extension
-\```
+
+cd better-translator
+```
 
 2. 在 Chrome 中加载扩展：
    - 打开 Chrome 浏览器
    - 访问 `chrome://extensions/`
    - 开启右上角的"开发者模式"
    - 点击"加载已解压的扩展程序"
-   - 选择项目中的 `extension` 目录
+   - 选择项目中的 `src` 目录
 
 ### 使用前准备
 
@@ -66,7 +67,7 @@ cd better-translator/extension
 
 ### 项目结构
 ```markdown
-extension/
+src/
 ├── manifest.json
 ├── popup/
 │ ├── popup.html
@@ -80,7 +81,7 @@ extension/
 │ ├── api.js
 │ └── storage.js
 └── background/
-└── background.js
+  └── background.js
 ```
 
 ### 本地开发
