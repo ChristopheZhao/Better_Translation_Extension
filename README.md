@@ -18,7 +18,7 @@ Better Translator 的 Chrome 扩展前端，提供便捷的网页翻译功能。
 
 1. 克隆仓库：
 \```bash
-git clone https://github.com/yourusername/better-translator.git
+git clone https://github.com/ChristopheZhao/better-translator.git
 cd better-translator/extension
 \```
 
@@ -65,23 +65,23 @@ cd better-translator/extension
 ## 开发指南
 
 ### 项目结构
-\```
+```markdown
 extension/
 ├── manifest.json
 ├── popup/
-│   ├── popup.html
-│   ├── popup.css
-│   └── popup.js
+│ ├── popup.html
+│ ├── popup.css
+│ └── popup.js
 ├── content/
-│   ├── content.js
-│   ├── translator.js
-│   └── styles.css
+│ ├── content.js
+│ ├── translator.js
+│ └── styles.css
 ├── utils/
-│   ├── api.js
-│   └── storage.js
+│ ├── api.js
+│ └── storage.js
 └── background/
-    └── background.js
-\```
+└── background.js
+```
 
 ### 本地开发
 
